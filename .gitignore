@@ -5,3 +5,6 @@
 /UserSettings
 /Library
 /Logs
+*xml
+*iml
+*Test
