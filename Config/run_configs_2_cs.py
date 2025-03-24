@@ -67,7 +67,7 @@ for root, dirs, files in os.walk(directory):
                     for i in range(len(tab_name_list)):
                         tab_name = tab_name_list[i]
                         tab_type = tab_type_list[i]
-                        generated_line = " List<" + tab_type + "> " + tab_name + "s = new List<" + tab_type +">(new " + tab_type + "[] {"
+                        generated_line = " List<" + tab_type + "> " + tab_name + "s {get;set; } = new List<" + tab_type +">(new " + tab_type + "[] {"
                         line_p2 = ""
                         for i in range(len(data[tab_name])):
                             dataValue = data[tab_name][i]
