@@ -7,12 +7,18 @@
         2. 总体气压
         3. 总比热
         4. 温度
+        
+        Balloon的特性是可以自由膨胀，气压=外界的压强 可以假定在charge、react等过程中外部的气压都并不显著改变
     */
     #endregion
 
     public class BalloonAtmosphereInfo : BaseAtmosphereInfo
     {
         public BalloonAtmosphereInfo(float outerPressure)
+        {
+            
+        }
+        public override void refreshPressure()
         {
             
         }

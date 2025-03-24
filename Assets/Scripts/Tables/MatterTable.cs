@@ -8,8 +8,6 @@ namespace Config
     [Serializable()]
     public class MatterTable : SingletonBase<MatterTable>
     {
-        public int testField { get; set; }
-
         #region auto_generate_start
 
         List<int> IDs { get; set; } = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7 });
@@ -44,7 +42,6 @@ namespace Config
                 }
             }
         }
-
         public T getTableValue<T>(string TabName, int ID)
         {
             var t = GetType();
